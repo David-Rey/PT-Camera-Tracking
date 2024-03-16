@@ -1,0 +1,94 @@
+{
+  "cameras": [
+    {
+      "id": "cam1",
+      "xfov": 40,
+      "zfov": 40,
+      "pos": [
+        60,
+        40,
+        0
+      ],
+      "direction": [
+        40,
+        0
+      ],
+      "slew_rate": [
+        5,
+        5
+      ],
+      "range_az": [
+        0,
+        360
+      ],
+      "range_el": [
+        0,
+        90
+      ]
+    },
+    {
+      "id": "cam2",
+      "xfov": 40,
+      "zfov": 40,
+      "pos": [
+        50,
+        50,
+        0
+      ],
+      "direction": [
+        30,
+        0
+      ],
+      "slew_rate": [
+        5,
+        5
+      ],
+      "range_az": [
+        0,
+        360
+      ],
+      "range_el": [
+        0,
+        90
+      ]
+    }
+  ],
+  "pso": {
+    "options": {
+      "w": 0.7298,
+      "c1": 1.4961,
+      "c2": 1.4961
+    },
+    "num_particles": 100,
+    "num_iterations": 10
+  },
+  "sim":
+  {
+    "start_time": 0,
+    "dt": 1
+  },
+
+  "metrics": {
+    "center": {
+      "enabled": true,
+      "importance": 1
+    },
+    "propagation": {
+      "enabled": true,
+      "importance": 1,
+      "propagation_time": 40
+    },
+    "decay": {
+      "enabled": false,
+      "importance": 1,
+      "decay_resolution": [
+        8,
+        8,
+        8
+      ],
+      "point_radius": 20,
+      "decay_cutoff": 0.5,
+      "decay_factor": 0.98
+    }
+  }
+}
